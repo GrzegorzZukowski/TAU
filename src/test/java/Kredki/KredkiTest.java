@@ -14,6 +14,8 @@ public class KredkiTest {
         assertNotNull(new Kredki());
     }
 
-
-
+    @Test
+    public void isObjectAbleToInstantiate(){
+        assertNotNull(new Kredki(1, "Czarny"));
+    }
 }
