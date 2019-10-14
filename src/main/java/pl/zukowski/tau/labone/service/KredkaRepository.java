@@ -20,7 +20,7 @@ public class KredkaRepository implements IKredkaRepositoryManager{
 
     @Override
     public ArrayList<Kredka> readAll() {
-        return null;
+        return kredki;
     }
 
     @Override
