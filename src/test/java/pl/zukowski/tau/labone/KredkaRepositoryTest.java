@@ -41,7 +41,16 @@ public class KredkaRepositoryTest  {
     //endregion
 
     //region ReadAll tests
+    @Test
+    public void pipa(){
+        KredkaRepository repo = new KredkaRepository();
+        Kredka kredkaZielona = new Kredka(1, "zielony");
+        Kredka kredkaMiebieska = new Kredka(2, "niebieski");
+        repo.kredki.add(kredkaZielona);
+        repo.kredki.add(kredkaMiebieska);
 
+        assertEquals(2, repo.readAll().size());
+    }
 
     //endregion
 }
