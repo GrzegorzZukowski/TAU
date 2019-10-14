@@ -26,6 +26,22 @@ public class KredkaRepositoryTest  {
 
         assertTrue(repo.kredki.contains(kredkaZielona));
     }
+    @Test
+    public void listShouldContainExactNumberOfObjects() {
+        Kredka kredkaZielona = new Kredka(1, "zielony");
+        Kredka kredkaMiebieska = new Kredka(2, "niebieski");
+
+        KredkaRepository repo = new KredkaRepository();
+
+        repo.kredki.add(kredkaZielona);
+        repo.kredki.add(kredkaMiebieska);
+
+        assertEquals(2, repo.kredki.size());
+    }
     //endregion
 
+    //region ReadAll tests
+
+
+    //endregion
 }
