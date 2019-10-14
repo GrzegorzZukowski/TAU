@@ -53,4 +53,18 @@ public class KredkaRepositoryTest  {
     }
 
     //endregion
+
+    //region Read tests
+    @Test
+    public void readShouldReturnObjectById() {
+        Kredka kredkaZielona = new Kredka(1, "zielony");
+
+        KredkaRepository repo = new KredkaRepository();
+        repo.kredki.add(kredkaZielona);
+
+        assertEquals("Objects are not equal", kredkaZielona, repo.read(1));
+    }
+
+
+    //endregion
 }
