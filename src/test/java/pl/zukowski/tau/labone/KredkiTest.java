@@ -1,8 +1,8 @@
-package Kredki;
+package pl.zukowski.tau.labone;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
+import pl.zukowski.tau.labone.domain.Kredki;
+
 import static  org.junit.Assert.*;
 
 

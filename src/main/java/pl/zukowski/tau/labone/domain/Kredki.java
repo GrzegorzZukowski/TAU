@@ -1,4 +1,4 @@
-package Kredki;
+package pl.zukowski.tau.labone.domain;
 
 public class Kredki {
     int Id;
