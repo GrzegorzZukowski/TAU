@@ -1,21 +1,21 @@
 package pl.zukowski.tau.labone;
 
 import org.junit.Test;
-import pl.zukowski.tau.labone.domain.Kredki;
+import pl.zukowski.tau.labone.domain.Kredka;
 
 import static  org.junit.Assert.*;
 
 
 
-public class KredkiTest {
+public class KredkaTest {
 
     @Test
     public void classImplementationTest(){
-        assertNotNull(new Kredki());
+        assertNotNull(new Kredka());
     }
 
     @Test
     public void isObjectAbleToInstantiate(){
-        assertNotNull(new Kredki(1, "Czarny"));
+        assertNotNull(new Kredka(1, "Czarny"));
     }
 }

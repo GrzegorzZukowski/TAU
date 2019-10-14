@@ -1,13 +1,13 @@
 package pl.zukowski.tau.labone.domain;
 
-public class Kredki {
+public class Kredka {
     int Id;
     String NazwaKoloru;
 
-    public Kredki() {
+    public Kredka() {
     }
 
-    public Kredki(int id, String nazwaKoloru) {
+    public Kredka(int id, String nazwaKoloru) {
         Id = id;
         NazwaKoloru = nazwaKoloru;
     }
