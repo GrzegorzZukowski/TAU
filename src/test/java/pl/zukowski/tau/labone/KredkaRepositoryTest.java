@@ -29,12 +29,12 @@ public class KredkaRepositoryTest  {
     @Test
     public void listShouldContainExactNumberOfObjects() {
         Kredka kredkaZielona = new Kredka(1, "zielony");
-        Kredka kredkaMiebieska = new Kredka(2, "niebieski");
+        Kredka kredkaNiebieska = new Kredka(2, "niebieski");
 
         KredkaRepository repo = new KredkaRepository();
 
         repo.kredki.add(kredkaZielona);
-        repo.kredki.add(kredkaMiebieska);
+        repo.kredki.add(kredkaNiebieska);
 
         assertEquals(2, repo.kredki.size());
     }
@@ -42,12 +42,12 @@ public class KredkaRepositoryTest  {
 
     //region ReadAll tests
     @Test
-    public void pipa(){
+    public void readAllTest(){
         KredkaRepository repo = new KredkaRepository();
         Kredka kredkaZielona = new Kredka(1, "zielony");
-        Kredka kredkaMiebieska = new Kredka(2, "niebieski");
+        Kredka kredkaNiebieska = new Kredka(2, "niebieski");
         repo.kredki.add(kredkaZielona);
-        repo.kredki.add(kredkaMiebieska);
+        repo.kredki.add(kredkaNiebieska);
 
         assertEquals(2, repo.readAll().size());
     }
