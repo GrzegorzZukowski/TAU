@@ -7,6 +7,7 @@ import pl.zukowski.tau.labone.service.KredkaRepository;
 import static org.junit.Assert.*;
 
 public class KredkaRepositoryTest  {
+    //region List tests
     @Test
     public void classImplementationTest(){
         assertNotNull(new KredkaRepository());
@@ -16,5 +17,15 @@ public class KredkaRepositoryTest  {
         KredkaRepository repo = new KredkaRepository();
         assertNotNull(repo.kredki);
     }
+    @Test
+    public void isListFilledWithObjects() {
+        Kredka kredkaZielona = new Kredka(1, "zielony");
+
+        KredkaRepository repo = new KredkaRepository();
+        repo.kredki.add(kredkaZielona);
+
+        assertTrue(repo.kredki.contains(kredkaZielona));
+    }
+    //endregion
 
 }
