@@ -11,4 +11,9 @@ public class KredkaRepositoryTest {
     public void classImplementationTest(){
         assertNotNull(new KredkaRepository());
     }
+    @Test
+    public void testList() {
+        KredkaRepository repo = new KredkaRepository();
+        assertNotNull(repo.kredki);
+    }
 }
