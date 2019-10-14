@@ -6,7 +6,7 @@ import pl.zukowski.tau.labone.service.KredkaRepository;
 
 import static org.junit.Assert.*;
 
-public class KredkaRepositoryTest {
+public class KredkaRepositoryTest  {
     @Test
     public void classImplementationTest(){
         assertNotNull(new KredkaRepository());
@@ -16,4 +16,5 @@ public class KredkaRepositoryTest {
         KredkaRepository repo = new KredkaRepository();
         assertNotNull(repo.kredki);
     }
+
 }
