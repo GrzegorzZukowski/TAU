@@ -5,8 +5,6 @@ import org.junit.rules.ExpectedException;
 
 import pl.zukowski.tau.labone.domain.Kredka;
 import pl.zukowski.tau.labone.service.KredkaRepository;
-
-
 import static org.junit.Assert.*;
 import java.util.NoSuchElementException;
 import org.junit.Rule;
@@ -151,6 +149,17 @@ public class KredkaRepositoryTest  {
         assertEquals(nowaCzerwona, repo.read(1));
 
     }
+    
+    @Test
+    public void updateElementNotPresentInDatabaseShouldThrowAnException(){
+        KredkaRepository repo = new KredkaRepository();
+
+        exception.expect(NoSuchElementException.class);
+        exception.expectMessage("Nie ma takiej kredki w bazie");
+        repo.update(1, new Kredka(1, "pomaranczowy"));
+    }
+    
+    
     //endregion
 
 }
