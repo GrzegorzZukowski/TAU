@@ -168,5 +168,13 @@ public class KredkaRepositoryTest  {
         assertNotNull(repo.remove(1));
     }
     
+    @Test
+    public void removeOfObjectTatDoesNotExistInDatabaseShouldThrowException(){
+        KredkaRepository repo = new KredkaRepository();
+        repo.create(new Kredka(1, "zielony"));
+        exception.expect(NoSuchElementException.class);
+        exception.expectMessage("Nie ma takiej kredki w bazie");
+        repo.remove(2);
+    }
     //endregion
 }
