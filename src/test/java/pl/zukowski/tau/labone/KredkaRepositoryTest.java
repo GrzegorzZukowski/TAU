@@ -185,5 +185,15 @@ public class KredkaRepositoryTest  {
         int expectedCountInList= repo.kredki.size();
         assertEquals(0, expectedCountInList);
     }
+
+    @Test
+    public void isPbjectReallyDeletedFromDatabaseShouldReturnTrue(){
+        KredkaRepository repo = new KredkaRepository();
+        repo.create(new Kredka(1, "zielony"));
+
+        repo.remove(1);
+
+        assertTrue(repo.kredki.isEmpty());
+    }
     //endregion
 }
