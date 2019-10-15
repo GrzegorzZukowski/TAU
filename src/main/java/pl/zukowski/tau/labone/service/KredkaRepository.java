@@ -32,7 +32,12 @@ public class KredkaRepository implements IKredkaRepositoryManager{
 
     @Override
     public Kredka update(int id, Kredka kredka) throws NoSuchElementException {
-        return null;
+    	for (Kredka _kredka : kredki)
+			if (_kredka.getId() == id && id <= kredki.size()) {
+				kredki.set(id - 1, kredka);
+				return kredka;
+			}
+		throw new NoSuchElementException("Nie ma takiej kredki w bazie");
     }
 
     @Override

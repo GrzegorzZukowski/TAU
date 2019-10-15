@@ -6,7 +6,6 @@ import org.junit.rules.ExpectedException;
 import pl.zukowski.tau.labone.domain.Kredka;
 import pl.zukowski.tau.labone.service.KredkaRepository;
 
-
 import static org.junit.Assert.*;
 import java.util.NoSuchElementException;
 import org.junit.Rule;
@@ -131,4 +130,17 @@ public class KredkaRepositoryTest  {
     }
 
     //endregion
+    
+  //region update test
+    @Test
+    public void canUpdateObject(){
+        KredkaRepository repo = new KredkaRepository();
+        Kredka kredkaZielona= new Kredka(1, "zielony");
+        repo.create(kredkaZielona);
+        assertNotNull(repo.update(1,new Kredka(1, "szary")));
+    }
+    
+    
+    //endregion
+
 }
