@@ -6,11 +6,8 @@ import org.junit.rules.ExpectedException;
 import pl.zukowski.tau.labone.domain.Kredka;
 import pl.zukowski.tau.labone.service.KredkaRepository;
 
-
 import static org.junit.Assert.*;
-
 import java.util.NoSuchElementException;
-
 import org.junit.Rule;
 
 public class KredkaRepositoryTest  {
@@ -95,6 +92,17 @@ public class KredkaRepositoryTest  {
     public void canCreateObject() {
     KredkaRepository repo = new KredkaRepository();
     assertNotNull(repo.create(new Kredka(1, "szary")));
+    }
+    
+    @Test
+    public void isObjectCreatedTestByReadById() {
+        KredkaRepository repo = new KredkaRepository();
+        Kredka kredka = new Kredka(1, "szary");
+
+        repo.create(kredka);
+
+        assertNotNull(repo.read(1));
+        assertEquals("Objects are not equal", kredka, kredka);
     }
     
     //endregion
