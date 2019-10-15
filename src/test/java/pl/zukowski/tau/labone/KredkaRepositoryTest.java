@@ -6,6 +6,7 @@ import org.junit.rules.ExpectedException;
 import pl.zukowski.tau.labone.domain.Kredka;
 import pl.zukowski.tau.labone.service.KredkaRepository;
 
+
 import static org.junit.Assert.*;
 import java.util.NoSuchElementException;
 import org.junit.Rule;
@@ -117,5 +118,17 @@ public class KredkaRepositoryTest  {
          assertEquals("List size is correct", 1, repo.kredki.size());
 
      }
+    
+    @Test
+    public void createObjectWithSameIdAsPresentInListShouldThrowException(){
+        KredkaRepository repo = new KredkaRepository();
+
+        repo.create(new Kredka(1, "szary"));
+        exception.expect(IllegalArgumentException.class);
+        exception.expectMessage("Kredka juz istnieje");
+
+        assertNotNull(repo.create(new Kredka(1, "szary")));
+    }
+
     //endregion
 }
