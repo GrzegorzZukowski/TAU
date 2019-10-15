@@ -176,5 +176,14 @@ public class KredkaRepositoryTest  {
         exception.expectMessage("Nie ma takiej kredki w bazie");
         repo.remove(2);
     }
+    
+    @Test
+    public void afterRemoveCheckHowManyObjectsInList(){
+        KredkaRepository repo = new KredkaRepository();
+        repo.create(new Kredka(1, "zielony"));
+        repo.remove(1);
+        int expectedCountInList= repo.kredki.size();
+        assertEquals(0, expectedCountInList);
+    }
     //endregion
 }
