@@ -105,5 +105,17 @@ public class KredkaRepositoryTest  {
         assertEquals("Objects are not equal", kredka, kredka);
     }
     
+
+    @Test
+     public void creationOfObjectChangeTheListSize() {
+         KredkaRepository repo = new KredkaRepository();
+
+         assertEquals(true, repo.kredki.isEmpty());
+
+         repo.create(new Kredka(1, "szary"));
+
+         assertEquals("List size is correct", 1, repo.kredki.size());
+
+     }
     //endregion
 }
