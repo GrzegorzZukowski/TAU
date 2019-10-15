@@ -10,7 +10,11 @@ public class KredkaRepository implements IKredkaRepositoryManager{
 
     @Override
     public Kredka create(Kredka kredka) throws IllegalArgumentException {
-        return null;
+        for (Kredka _kredka : kredki)
+        	if(_kredka.getId()==kredka.getId())
+        		throw new IllegalArgumentException("Kredka juz istnieje");
+        kredki.add(kredka);
+        return kredka;
     }
 
     @Override

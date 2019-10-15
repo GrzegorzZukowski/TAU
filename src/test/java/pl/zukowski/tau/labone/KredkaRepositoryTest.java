@@ -89,4 +89,13 @@ public class KredkaRepositoryTest  {
         assertNotNull(repo.read(2));
     }
     //endregion
+    
+    //region create test
+    @Test
+    public void canCreateObject() {
+    KredkaRepository repo = new KredkaRepository();
+    assertNotNull(repo.create(new Kredka(1, "szary")));
+    }
+    
+    //endregion
 }
