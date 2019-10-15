@@ -42,6 +42,11 @@ public class KredkaRepository implements IKredkaRepositoryManager{
 
     @Override
     public Kredka remove(int id) {
+        Kredka kredka = null;
+        if((kredka= read(id))!=null) {
+        	kredki.remove(kredka);
+        	return kredka;
+        }
         return null;
     }
 }

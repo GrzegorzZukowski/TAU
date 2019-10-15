@@ -158,8 +158,15 @@ public class KredkaRepositoryTest  {
         exception.expectMessage("Nie ma takiej kredki w bazie");
         repo.update(1, new Kredka(1, "pomaranczowy"));
     }
+    //endregion
     
+    //region delete test
+    @Test
+    public void canRemoveObject(){
+        KredkaRepository repo = new KredkaRepository();
+        repo.create(new Kredka(1, "zielony"));
+        assertNotNull(repo.remove(1));
+    }
     
     //endregion
-
 }
