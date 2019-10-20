@@ -7,6 +7,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import pl.zukowski.tau.labone.domain.Kredka;
+import pl.zukowski.tau.labone.domain.TimeStamp;
 
 import static org.junit.Assert.*;
 
@@ -17,11 +18,11 @@ import java.sql.Date;
 public class KredkiRepositoryWithDatesTest {
 
 	@Mock
-	Date DataDodaniaDoBazy;
+	TimeStamp DataDodaniaDoBazy;
 	@Mock
-	Date DataOstatniejModyfikacji;
+	TimeStamp DataOstatniejModyfikacji;
 	@Mock
-	Date DataOstatniegoOdczytu;
+	TimeStamp DataOstatniegoOdczytu;
 	
 	@Before
 	public void initMocs() {
@@ -39,5 +40,7 @@ public class KredkiRepositoryWithDatesTest {
 	@Test 
 	public void testForDateOstatniegoOdczytu() {
 		assertNotNull(DataDodaniaDoBazy);
+		
 	}
+	
 }

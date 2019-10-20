@@ -8,12 +8,14 @@ import java.sql.Date;
 import org.junit.Test;
 
 import pl.zukowski.tau.labone.domain.Kredka;
+import pl.zukowski.tau.labone.domain.TimeStamp;
 
 public class KredkaWithDatesTest {
     @Test
     //Sprawdzenie czy mozna dodawac daty do nowych pol
     public void isObjectAbleToAddAllDates() {
-    	assertNotNull(new Kredka(1,"czrny", Date.valueOf(LocalDate.now()), Date.valueOf(LocalDate.now()), Date.valueOf(LocalDate.now())));
+    	TimeStamp ts = new TimeStamp(LocalDate.now());
+    	assertNotNull(new Kredka(1,"czarny",ts,ts,ts));
     }
     
 }

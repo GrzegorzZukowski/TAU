@@ -1,20 +1,19 @@
 package pl.zukowski.tau.labone.domain;
 
-import java.util.Date;
 
 public class Kredka {
 
 	int Id;
 	String NazwaKoloru;
-	Date DataDodaniaDoBazy;
-	Date DataOstatniejModyfikacji;
-	Date DataOstatniegoOdczytu;
+	TimeStamp DataDodaniaDoBazy;
+	TimeStamp DataOstatniejModyfikacji;
+	TimeStamp DataOstatniegoOdczytu;
 
 	public Kredka() {
 		
 	}
 
-	public Kredka(int id, String nazwaKoloru, Date dataDodaniaDoBazy, Date dataOstatniejModyfikacji, Date dataOstatniegoOdczytu) {
+	public Kredka(int id, String nazwaKoloru, TimeStamp dataDodaniaDoBazy, TimeStamp dataOstatniejModyfikacji, TimeStamp dataOstatniegoOdczytu) {
 		Id = id;
 		NazwaKoloru = nazwaKoloru;
 		DataDodaniaDoBazy = dataDodaniaDoBazy;
@@ -43,27 +42,27 @@ public class Kredka {
 		NazwaKoloru = nazwaKoloru;
 	}
 
-	public Date getDataDodaniaDoBazy() {
+	public TimeStamp getDataDodaniaDoBazy() {
 		return DataDodaniaDoBazy;
 	}
 
-	public void setDataDodaniaDoBazy(Date dataDodaniaDoBazy) {
+	public void setDataDodaniaDoBazy(TimeStamp dataDodaniaDoBazy) {
 		DataDodaniaDoBazy = dataDodaniaDoBazy;
 	}
 
-	public Date getDataOstatniejModyfikacji() {
+	public TimeStamp getDataOstatniejModyfikacji() {
 		return DataOstatniejModyfikacji;
 	}
 
-	public void setDataOstatniejModyfikacji(Date dataOstatniejModyfikacji) {
+	public void setDataOstatniejModyfikacji(TimeStamp dataOstatniejModyfikacji) {
 		DataOstatniejModyfikacji = dataOstatniejModyfikacji;
 	}
 
-	public Date getDataOstatniegoOdczytu() {
+	public TimeStamp getDataOstatniegoOdczytu() {
 		return DataOstatniegoOdczytu;
 	}
 
-	public void setDataOstatniegoOdczytu(Date dataOstatniegoOdczytu) {
+	public void setDataOstatniegoOdczytu(TimeStamp dataOstatniegoOdczytu) {
 		DataOstatniegoOdczytu = dataOstatniegoOdczytu;
 	}
 
