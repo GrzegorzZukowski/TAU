@@ -21,10 +21,5 @@ public class KredkaTest {
         assertNotNull(new Kredka(1, "Czarny"));
     }
     
-    @Test
-    //Sprawdzenie czy mozna dodawac daty do nowych pol
-    public void isObjectAbleToAddAllDates() {
-    	assertNotNull(new Kredka(1,"czrny",LocalDate.now(), LocalDate.now(),LocalDate.now()));
-    }
-    
+
 }
