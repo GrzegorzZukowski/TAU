@@ -5,6 +5,8 @@ import pl.zukowski.tau.labone.domain.Kredka;
 
 import static  org.junit.Assert.*;
 
+import java.time.LocalDate;
+
 
 
 public class KredkaTest {
@@ -18,4 +20,6 @@ public class KredkaTest {
     public void isObjectAbleToInstantiate(){
         assertNotNull(new Kredka(1, "Czarny"));
     }
+    
+
 }

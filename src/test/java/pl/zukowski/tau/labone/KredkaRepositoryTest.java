@@ -9,6 +9,7 @@ import static org.junit.Assert.*;
 import java.util.NoSuchElementException;
 import org.junit.Rule;
 
+
 public class KredkaRepositoryTest  {
     //region List tests
     @Test
@@ -185,5 +186,17 @@ public class KredkaRepositoryTest  {
         int expectedCountInList= repo.kredki.size();
         assertEquals(0, expectedCountInList);
     }
+
+    @Test
+    public void isPbjectReallyDeletedFromDatabaseShouldReturnTrue(){
+        KredkaRepository repo = new KredkaRepository();
+        repo.create(new Kredka(1, "zielony"));
+
+        repo.remove(1);
+
+        assertTrue(repo.kredki.isEmpty());
+    }
     //endregion
+
+    
 }
