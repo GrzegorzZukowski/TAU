@@ -3,6 +3,8 @@ package pl.zukowski.tau.labone.domain;
 public class Kredka {
     int Id;
     String NazwaKoloru;
+    ObslogaDaty obsluga;
+    
 
     public Kredka() {
     }
