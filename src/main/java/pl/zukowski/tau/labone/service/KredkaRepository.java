@@ -1,11 +1,12 @@
 package pl.zukowski.tau.labone.service;
-
 import pl.zukowski.tau.labone.domain.Kredka;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
 public class KredkaRepository implements IKredkaRepositoryManager{
+	
     public ArrayList<Kredka> kredki = new ArrayList();
 
     @Override
@@ -13,6 +14,7 @@ public class KredkaRepository implements IKredkaRepositoryManager{
         for (Kredka _kredka : kredki)
         	if(_kredka.getId()==kredka.getId())
         		throw new IllegalArgumentException("Kredka juz istnieje");
+        
         kredki.add(kredka);
         return kredka;
     }
