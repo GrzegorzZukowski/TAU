@@ -3,7 +3,9 @@ package pl.zukowski.tau.labone.domain;
 public class Kredka {
     int Id;
     String NazwaKoloru;
-    ObslogaDaty obsluga;
+	TimeStamp DodanieDoBazy;
+	TimeStamp OstatniaModyfikacja;
+	TimeStamp OstatniOdczyt;
     
 
     public Kredka() {
@@ -13,6 +15,14 @@ public class Kredka {
         Id = id;
         NazwaKoloru = nazwaKoloru;
     }
+
+    public Kredka(int id, String nazwaKoloru, TimeStamp dodanieDoBazy, TimeStamp ostatniaModyfikacja, TimeStamp ostatniOdczyt){
+    	Id = id;
+    	NazwaKoloru = nazwaKoloru;
+    	DodanieDoBazy = dodanieDoBazy;
+    	OstatniaModyfikacja = ostatniaModyfikacja;
+    	OstatniOdczyt = ostatniOdczyt;
+	}
 
     public int getId() {
         return Id;
