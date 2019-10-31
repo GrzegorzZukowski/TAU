@@ -1,12 +1,13 @@
 package pl.zukowski.tau.labone.domain;
 
+
 public class Kredka {
     int Id;
     String NazwaKoloru;
-	TimeStamp DodanieDoBazy;
-	TimeStamp OstatniaModyfikacja;
-	TimeStamp OstatniOdczyt;
-    
+
+    TimeStamp DodanieDoBazy;
+    TimeStamp OstatniaModyfikacja;
+    TimeStamp OstatniOdczyt;
 
     public Kredka() {
     }
@@ -39,4 +40,30 @@ public class Kredka {
     public void setNazwaKoloru(String nazwaKoloru) {
         NazwaKoloru = nazwaKoloru;
     }
+
+    public void setDodanieDoBazy(TimeStamp dodanieDoBazy) {
+        DodanieDoBazy = dodanieDoBazy;
+    }
+
+    public void setOstatniaModyfikacja(TimeStamp ostatniaModyfikacja) {
+        OstatniaModyfikacja = ostatniaModyfikacja;
+    }
+
+    public void setOstatniOdczyt(TimeStamp ostatniOdczyt) {
+        OstatniOdczyt = ostatniOdczyt;
+    }
+
+    public TimeStamp getDodanieDoBazy() {
+        return DodanieDoBazy;
+    }
+
+    public TimeStamp getOstatniaModyfikacja() {
+        return OstatniaModyfikacja;
+    }
+
+    public TimeStamp getOstatniOdczyt() {
+        return OstatniOdczyt;
+    }
+
+
 }

@@ -1,7 +1,10 @@
 package pl.zukowski.tau.labone.service;
 import pl.zukowski.tau.labone.domain.Kredka;
+import pl.zukowski.tau.labone.domain.TimeStamp;
 
+import java.time.Clock;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
@@ -22,8 +25,10 @@ public class KredkaRepository implements IKredkaRepositoryManager{
     @Override
     public Kredka read(int id) throws NoSuchElementException {
         for (Kredka _kredka : kredki)
-            if (_kredka.getId() == id)
+            if (_kredka.getId() == id){
+                _kredka.setOstatniOdczyt(new TimeStamp(LocalDate.now()));
                 return _kredka;
+            }
         throw new NoSuchElementException("Nie ma takiej kredki w bazie");
     }
 
