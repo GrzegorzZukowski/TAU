@@ -143,7 +143,7 @@ public class KredkaRepositoryTest  {
     @Test
     public void actuallyUpdatesObjectShouldReturnTrue(){
         KredkaRepository repo = new KredkaRepository();
-        Kredka nowaCzerwona = new Kredka(1, "szary");
+        Kredka nowaCzerwona = new Kredka(1, "czerwona");
         Kredka szara = new Kredka(1, "szary");
         repo.create(szara);
         repo.update(1, nowaCzerwona);

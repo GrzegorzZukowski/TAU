@@ -17,7 +17,7 @@ public class KredkaRepository implements IKredkaRepositoryManager{
         for (Kredka _kredka : kredki)
         	if(_kredka.getId()==kredka.getId())
         		throw new IllegalArgumentException("Kredka juz istnieje");
-        
+        kredka.setDodanieDoBazy(new TimeStamp(LocalDate.now()));
         kredki.add(kredka);
         return kredka;
     }
@@ -41,6 +41,7 @@ public class KredkaRepository implements IKredkaRepositoryManager{
     public Kredka update(int id, Kredka kredka) throws NoSuchElementException {
     	for (Kredka _kredka : kredki)
 			if (_kredka.getId() == id && id <= kredki.size()) {
+			    kredka.setOstatniaModyfikacja(new TimeStamp(LocalDate.now()));
 				kredki.set(id - 1, kredka);
 				return kredka;
 			}

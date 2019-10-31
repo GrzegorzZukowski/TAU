@@ -38,7 +38,7 @@ public class KredkiRepositoryWithDatesTest {
 
 
 	@Mock
-	public KredkaRepository mockedRepo;
+	KredkaRepository mockedRepo = new KredkaRepository();
 
 
 	@Before
@@ -78,7 +78,28 @@ public class KredkiRepositoryWithDatesTest {
 		when(ostatniOdczyt.getTimeStamp()).thenReturn(LocalDate.now());
 		Mockito.mockingDetails(ostatniOdczyt).isMock();
 		assertEquals(repo.read(0).getOstatniOdczyt().getTimeStamp(), ostatniOdczyt.getTimeStamp());
+	}
 
+	@Test
+	public void testOfDodanieDoBazyOnCreatMethod(){
+		Kredka kredka = new Kredka(0,"szara");
+		KredkaRepository repo= new KredkaRepository();
+		repo.create(kredka);
+		when(dodanieDoBazy.getTimeStamp()).thenReturn(LocalDate.now());
+		Mockito.mockingDetails(dodanieDoBazy).isMock();
+		assertEquals(repo.read(0).getDodanieDoBazy().getTimeStamp(), dodanieDoBazy.getTimeStamp());
+	}
+
+	@Test
+	public void testOfOstatniaModyfikacjaOnUpdateMethod(){
+		Kredka kredka = new Kredka(1,"szara");
+		Kredka czarna = new Kredka(1, "czarna");
+		KredkaRepository repo= new KredkaRepository();
+		repo.create(kredka);
+		repo.update(1, czarna);
+		when(ostatniaModyfikacja.getTimeStamp()).thenReturn(LocalDate.now());
+		Mockito.mockingDetails(ostatniaModyfikacja).isMock();
+		assertEquals(repo.read(1).getOstatniaModyfikacja().getTimeStamp(), ostatniaModyfikacja.getTimeStamp());
 	}
 
 
