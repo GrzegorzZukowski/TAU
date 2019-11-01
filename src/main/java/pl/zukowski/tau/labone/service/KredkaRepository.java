@@ -9,15 +9,22 @@ import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
 public class KredkaRepository implements IKredkaRepositoryManager{
-	
+
     public ArrayList<Kredka> kredki = new ArrayList();
+
+    private boolean toggleOtatniOdczyt= true;
+    private boolean toggleDodanieDoBazy= true;
+    private boolean toggleOstatniaModyfikacja= true;
+
+
 
     @Override
     public Kredka create(Kredka kredka) throws IllegalArgumentException {
         for (Kredka _kredka : kredki)
         	if(_kredka.getId()==kredka.getId())
         		throw new IllegalArgumentException("Kredka juz istnieje");
-        kredka.setDodanieDoBazy(new TimeStamp(LocalDate.now()));
+        if(toggleDodanieDoBazy)
+            kredka.setDodanieDoBazy(new TimeStamp(LocalDate.now()));
         kredki.add(kredka);
         return kredka;
     }
@@ -26,7 +33,8 @@ public class KredkaRepository implements IKredkaRepositoryManager{
     public Kredka read(int id) throws NoSuchElementException {
         for (Kredka _kredka : kredki)
             if (_kredka.getId() == id){
-                _kredka.setOstatniOdczyt(new TimeStamp(LocalDate.now()));
+                if(toggleOtatniOdczyt)
+                    _kredka.setOstatniOdczyt(new TimeStamp(LocalDate.now()));
                 return _kredka;
             }
         throw new NoSuchElementException("Nie ma takiej kredki w bazie");
@@ -41,7 +49,8 @@ public class KredkaRepository implements IKredkaRepositoryManager{
     public Kredka update(int id, Kredka kredka) throws NoSuchElementException {
     	for (Kredka _kredka : kredki)
 			if (_kredka.getId() == id && id <= kredki.size()) {
-			    kredka.setOstatniaModyfikacja(new TimeStamp(LocalDate.now()));
+			    if(toggleOstatniaModyfikacja)
+			        kredka.setOstatniaModyfikacja(new TimeStamp(LocalDate.now()));
 				kredki.set(id - 1, kredka);
 				return kredka;
 			}
@@ -56,5 +65,15 @@ public class KredkaRepository implements IKredkaRepositoryManager{
         	return kredka;
         }
         return null;
+    }
+
+    public void toggleDodajTimeStamp(){
+        toggleDodanieDoBazy=false;
+    }
+    public void toggleOstatniOdczytTimeStamo(){
+        toggleOtatniOdczyt=false;
+    }
+    public void toggleOstatniaModyfikacjaTimeStamp(){
+        toggleOstatniaModyfikacja= false;
     }
 }
