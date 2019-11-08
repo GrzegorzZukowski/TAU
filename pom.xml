@@ -24,6 +24,18 @@
       <version>3.0.0</version>
       <scope>test</scope>
     </dependency>
+      <dependency>
+          <groupId>io.cucumber</groupId>
+          <artifactId>cucumber-core</artifactId>
+          <version>4.8.0</version>
+          <scope>test</scope>
+      </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>4.8.0</version>
+      <scope>test</scope>
+    </dependency>
 
   </dependencies>
 </project>
