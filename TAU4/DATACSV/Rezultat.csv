@@ -1,0 +1,73 @@
+
+1574540567289,214,delete person 0,500,Server Error,Thread group 1-1,,false,,110,185,1,1,http://localhost:8080/api/person/0,214,0,38
+1574540569021,14,Uaktualnij osobe Alicja,404,Not Found,Thread group 1-1,,false,,107,247,1,1,http://localhost:8080/api/pet,14,0,2
+1574540570551,5,Usuń wszystkie osoby,200,OK,Thread group 1-1,,true,,100,216,1,1,http://localhost:8080/api/persons,5,0,0
+1574540572071,19,Stworz osobe Kowalsky,200,OK,Thread group 1-1,text,true,,189,224,1,1,http://localhost:8080/api/person,17,0,2
+1574540573606,6,GetAll,200,OK,Thread group 1-1,text,true,,191,130,1,1,http://localhost:8080/api/persons,5,0,0
+1574540575128,6,Stworz kolejna osobe,200,OK,Thread group 1-1,text,true,,194,229,1,1,http://localhost:8080/api/person,6,0,1
+1574540576649,4,GetAll,200,OK,Thread group 1-1,text,true,,234,130,1,1,http://localhost:8080/api/persons,4,0,0
+1574540578169,8,GetAll,200,OK,Thread group 1-1,text,true,,234,130,1,1,http://localhost:8080/api/persons,8,0,2
+1574540625317,221,delete person 0,500,Server Error,Thread group 1-1,,false,,110,185,1,1,http://localhost:8080/api/person/0,221,0,2
+1574540627054,7,Uaktualnij osobe Alicja,404,Not Found,Thread group 1-1,,false,,107,247,1,1,http://localhost:8080/api/pet,7,0,1
+1574540628577,4,Usuń wszystkie osoby,200,OK,Thread group 1-1,,true,,100,216,1,1,http://localhost:8080/api/persons,4,0,0
+1574540630097,7,Stworz osobe Kowalsky,200,OK,Thread group 1-1,text,true,,189,224,1,1,http://localhost:8080/api/person,7,0,1
+1574540631619,5,GetAll,200,OK,Thread group 1-1,text,true,,191,130,1,1,http://localhost:8080/api/persons,5,0,0
+1574540633140,6,Stworz kolejna osobe,200,OK,Thread group 1-1,text,true,,194,229,1,1,http://localhost:8080/api/person,6,0,1
+1574540634661,5,GetAll,200,OK,Thread group 1-1,text,true,,234,130,1,1,http://localhost:8080/api/persons,5,0,0
+1574540636182,7,GetAll,200,OK,Thread group 1-1,text,true,,234,130,1,1,http://localhost:8080/api/persons,6,0,2
+1574540709805,153,delete person 0,500,Server Error,Thread group 1-1,,false,,110,185,1,1,http://localhost:8080/api/person/0,153,0,2
+1574540711473,8,Uaktualnij osobe Alicja,404,Not Found,Thread group 1-1,,false,,107,247,1,1,http://localhost:8080/api/pet,8,0,2
+1574540712997,4,Usuń wszystkie osoby,200,OK,Thread group 1-1,,true,,100,216,1,1,http://localhost:8080/api/persons,4,0,0
+1574540714516,5,Stworz osobe Kowalsky,200,OK,Thread group 1-1,text,true,,189,224,1,1,http://localhost:8080/api/person,5,0,1
+1574540716036,5,GetAll,200,OK,Thread group 1-1,text,true,,191,130,1,1,http://localhost:8080/api/persons,4,0,0
+1574540717557,4,Stworz kolejna osobe,200,OK,Thread group 1-1,text,true,,195,229,1,1,http://localhost:8080/api/person,4,0,1
+1574540719076,6,GetAll,200,OK,Thread group 1-1,text,true,,235,130,1,1,http://localhost:8080/api/persons,4,0,0
+1574540720598,6,GetAll,200,OK,Thread group 1-1,text,true,,235,130,1,1,http://localhost:8080/api/persons,6,0,2
+1574540760408,186,delete person 0,500,Server Error,Thread group 1-1,,false,,110,185,1,1,http://localhost:8080/api/person/0,186,0,3
+1574540762110,8,Uaktualnij osobe Alicja,404,Not Found,Thread group 1-1,,false,,107,247,1,1,http://localhost:8080/api/pet,8,0,2
+1574540763633,4,Usuń wszystkie osoby,200,OK,Thread group 1-1,,true,,100,216,1,1,http://localhost:8080/api/persons,4,0,0
+1574540765153,7,Stworz osobe Kowalsky,200,OK,Thread group 1-1,text,true,,190,224,1,1,http://localhost:8080/api/person,7,0,1
+1574540766676,4,GetAll,200,OK,Thread group 1-1,text,true,,192,130,1,1,http://localhost:8080/api/persons,4,0,0
+1574540768196,9,Stworz kolejna osobe,200,OK,Thread group 1-1,text,true,,195,229,1,1,http://localhost:8080/api/person,9,0,1
+1574540769720,3,GetAll,200,OK,Thread group 1-1,text,true,,236,130,1,1,http://localhost:8080/api/persons,3,0,0
+1574540771239,6,GetAll,200,OK,Thread group 1-1,text,true,,236,130,1,1,http://localhost:8080/api/persons,6,0,1
+1574540964755,228,delete person 0,500,Server Error,Thread group 1-1,,false,,110,185,1,1,http://localhost:8080/api/person/0,228,0,2
+1574540966498,8,Uaktualnij osobe Alicja,404,Not Found,Thread group 1-1,,false,,107,247,1,1,http://localhost:8080/api/pet,8,0,2
+1574540968021,4,Usuń wszystkie osoby,200,OK,Thread group 1-1,,true,,100,216,1,1,http://localhost:8080/api/persons,4,0,0
+1574540969540,7,Stworz osobe Kowalsky,200,OK,Thread group 1-1,text,true,,190,224,1,1,http://localhost:8080/api/person,7,0,1
+1574540971063,4,GetAll,200,OK,Thread group 1-1,text,true,,192,130,1,1,http://localhost:8080/api/persons,4,0,0
+1574540972582,7,Stworz kolejna osobe,200,OK,Thread group 1-1,text,true,,195,229,1,1,http://localhost:8080/api/person,6,0,1
+1574540974104,4,GetAll,200,OK,Thread group 1-1,text,true,,236,130,1,1,http://localhost:8080/api/persons,4,0,0
+1574540975623,7,GetAll,200,OK,Thread group 1-1,text,true,,236,130,1,1,http://localhost:8080/api/persons,7,0,2
+1574541010227,204,delete person 0,500,Server Error,Thread group 1-1,,false,,110,185,1,1,http://localhost:8080/api/person/0,204,0,1
+1574541011947,8,Uaktualnij osobe Alicja,404,Not Found,Thread group 1-1,,false,,107,247,1,1,http://localhost:8080/api/pet,8,0,2
+1574541013471,4,Usuń wszystkie osoby,200,OK,Thread group 1-1,,true,,100,216,1,1,http://localhost:8080/api/persons,4,0,0
+1574541014991,7,Stworz osobe Kowalsky,200,OK,Thread group 1-1,text,true,,190,224,1,1,http://localhost:8080/api/person,6,0,2
+1574541016513,4,GetAll,200,OK,Thread group 1-1,text,true,,192,130,1,1,http://localhost:8080/api/persons,4,0,0
+1574541018032,7,Stworz kolejna osobe,200,OK,Thread group 1-1,text,true,,195,229,1,1,http://localhost:8080/api/person,7,0,2
+1574541019555,4,GetAll,200,OK,Thread group 1-1,text,true,,236,130,1,1,http://localhost:8080/api/persons,3,0,0
+1574541021074,6,GetAll,200,OK,Thread group 1-1,text,true,,236,130,1,1,http://localhost:8080/api/persons,6,0,2
+1574541093301,182,delete person 0,500,Server Error,Thread group 1-1,,false,,110,185,1,1,http://localhost:8080/api/person/0,182,0,2
+1574541094998,7,Uaktualnij osobe Alicja,404,Not Found,Thread group 1-1,,false,,107,247,1,1,http://localhost:8080/api/pet,7,0,2
+1574541096521,3,Usuń wszystkie osoby,200,OK,Thread group 1-1,,true,,100,216,1,1,http://localhost:8080/api/persons,3,0,0
+1574541098040,7,Stworz osobe Kowalsky,200,OK,Thread group 1-1,text,true,,190,224,1,1,http://localhost:8080/api/person,7,0,2
+1574541099563,3,GetAll,200,OK,Thread group 1-1,text,true,,192,130,1,1,http://localhost:8080/api/persons,2,0,0
+1574541101081,7,Stworz kolejna osobe,200,OK,Thread group 1-1,text,true,,195,229,1,1,http://localhost:8080/api/person,7,0,2
+1574541102604,4,GetAll,200,OK,Thread group 1-1,text,true,,236,130,1,1,http://localhost:8080/api/persons,4,0,0
+1574541104123,6,GetAll,200,OK,Thread group 1-1,text,true,,236,130,1,1,http://localhost:8080/api/persons,6,0,2
+1574541317509,214,delete person 0,500,Server Error,Thread group 1-1,,false,,110,185,1,1,http://localhost:8080/api/person/0,214,0,1
+1574541319238,8,Uaktualnij osobe Alicja,404,Not Found,Thread group 1-1,,false,,107,247,1,1,http://localhost:8080/api/pet,8,0,1
+1574541320763,26,Usuń wszystkie osoby,200,OK,Thread group 1-1,,true,,100,216,1,1,http://localhost:8080/api/persons,26,0,0
+1574541322305,64,Stworz osobe Kowalsky,200,OK,Thread group 1-1,text,true,,189,224,1,1,http://localhost:8080/api/person,64,0,2
+1574541323884,6,GetAll,200,OK,Thread group 1-1,text,true,,191,130,1,1,http://localhost:8080/api/persons,6,0,0
+1574541325405,7,Stworz kolejna osobe,200,OK,Thread group 1-1,text,true,,194,229,1,1,http://localhost:8080/api/person,7,0,2
+1574541326927,4,GetAll,200,OK,Thread group 1-1,text,true,,234,130,1,1,http://localhost:8080/api/persons,4,0,0
+1574541328447,6,GetAll,200,OK,Thread group 1-1,text,true,,234,130,1,1,http://localhost:8080/api/persons,5,0,1
+1574541460295,10,Usun osobe 0,200,OK,Thread group 1-1,text,true,,152,185,1,1,http://localhost:8080/api/person/0,10,0,1
+1574541461821,5,Uaktualnij osobe Alicja,404,Not Found,Thread group 1-1,,false,,107,247,1,1,http://localhost:8080/api/pet,5,0,0
+1574541463342,6,Usuń wszystkie osoby,200,OK,Thread group 1-1,,true,,100,216,1,1,http://localhost:8080/api/persons,6,0,2
+1574541464863,5,Stworz osobe Kowalsky,200,OK,Thread group 1-1,text,true,,189,224,1,1,http://localhost:8080/api/person,5,0,0
+1574541466385,6,GetAll,200,OK,Thread group 1-1,text,true,,191,130,1,1,http://localhost:8080/api/persons,6,0,2
+1574541467907,4,Stworz kolejna osobe,200,OK,Thread group 1-1,text,true,,194,229,1,1,http://localhost:8080/api/person,4,0,0
+1574541469427,7,GetAll,200,OK,Thread group 1-1,text,true,,234,130,1,1,http://localhost:8080/api/persons,7,0,1
+1574541470949,4,GetAll,200,OK,Thread group 1-1,text,true,,234,130,1,1,http://localhost:8080/api/persons,4,0,0
